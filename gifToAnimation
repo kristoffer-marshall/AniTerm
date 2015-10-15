@@ -1,0 +1,24 @@
+#!/bin/bash
+image=$1
+basename=$(basename $image | cut -d. -f1)
+FRAMESDIR=$HOME/.aniterm
+
+# Make the frame directory
+mkdir $FRAMESDIR/$basename 2> /dev/null
+
+# Remove any frames that exist already
+rm $FRAMESDIR/$basename/*.frame 2> /dev/null
+
+# Convert all frames to seperate PNG files
+#convert -alpha set -dispose previous $basename.gif $FRAMESDIR/$basename/$basename.png
+convert -coalesce -splice x36 -gravity south $basename.gif $FRAMESDIR/$basename/$basename.png
+
+# Go through each PNG and convert to a console frame
+for x in $(ls $FRAMESDIR/$basename/*.png); do
+   fabulous $x > $FRAMESDIR/$basename/`basename $x | cut -d. -f1`.frame
+done
+
+# Remove any PNG files
+rm $FRAMESDIR/$basename/*.png
+
+aniterm $basename
