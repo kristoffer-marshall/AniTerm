@@ -1,4 +1,7 @@
 # AniTerm
+
+[![screenshot](https://github.com/kristoffer-marshall/AniTerm/raw/master/screenshot-zoidberg.gif)]
+
 Displays colorful animations in your terminal
 
 Throw "aniterm" into ~/bin and the ".aniterm/" directory into your home directory. chmod +x ~/bin/aniterm, then execute!
