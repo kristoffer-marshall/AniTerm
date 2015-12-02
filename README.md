@@ -4,11 +4,13 @@
 
 ## Displays colorful animations in your terminal
 
-Throw "aniterm" into ~/bin and the ".aniterm/" directory into your home directory. chmod +x ~/bin/aniterm, then execute!
+Wouldn't it be cool to display an animated gif in your terminal each time you log into a server? Well now you can! Throw the executable "aniterm" into ~/bin and the ".aniterm/" directory into your home directory. chmod +x ~/bin/aniterm, then execute!
 
-
+## Run AniTerm
 **Usage:** `aniterm [loop_times] [timeout seconds] DIRECTORY_OF_FRAMES`
+
 Default loop_times: 3
+
 Default timeout: .1
 
 Example: `aniterm 5 .2 banana`
