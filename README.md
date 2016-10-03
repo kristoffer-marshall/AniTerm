@@ -1,6 +1,6 @@
 # AniTerm
 
-[![screenshot](https://github.com/kristoffer-marshall/AniTerm/raw/master/screenshot-zoidberg.gif)]
+![screenshot](https://github.com/kristoffer-marshall/AniTerm/raw/master/screenshot-zoidberg.gif)
 
 ## Displays colorful animations in your terminal
 *Wouldn't it be cool to display an animated gif in your terminal each time you log into a server? Well now you can!*
